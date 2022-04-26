@@ -1,0 +1,1421 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Trang chủ</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+	<style type="text/css">
+		body{
+		      	font-family: Roboto,Helvetica Neue,Helvetica,Arial,Sans-serif;
+            font-size: 14px;
+            line-height: 1.42857143;
+            color: #333;
+            background: #efefef;
+          
+		}
+		.head{
+             color: black;
+             background: #e8eaee;
+             font-size: 13px;
+        }
+        .head a{
+        	padding: 15px;
+        
+        }
+        .top a{
+        	text-decoration: none;
+        	color: #7f7f7e;
+
+        }
+        @media screen and (max-width: 1000px) {
+       .top a {display: none;}
+       .dn {display: none;}
+       #menu{display: none;}
+       .ico{display: none;}
+        }
+        .dn{
+        	padding-top: 35px; padding-left: 70px;
+        }
+        .ico{
+          padding-top: 25px;
+
+        }
+        .ico img{
+          width: 40%;
+        }
+        .list{
+        	z-index: 99;
+        	padding: 0px;
+        	margin: 0px;
+
+        }
+        .head1{
+          background: white;
+        }
+        .cen{
+        	background: black;
+        }
+        #menu ul {
+            background: white;
+            width: 100%;
+            padding: 0;
+            list-style-type: none;
+            text-align: left;
+        }
+        #menu li {
+            width: auto;
+            height: 40px;
+            line-height: 40px;
+            border-bottom: 1px solid #e8e8e8;
+            padding: 0 1em;
+        }
+        #menu li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            display: block;
+        }
+        #menu li:hover {
+            background: #CDE2CD;
+        }
+
+/*==Dropdown Menu==*/
+        #menu ul li {
+            position: relative;
+        }
+        #menu .sub-menu {
+            position: absolute;
+            left: 100%;
+            top: 0;
+            display: none;
+        }
+        #menu li:hover .sub-menu {
+            display: block;
+        }
+        .cen{
+         animation: colorBackground 10s infinite;
+         -webkit-animation: colorBackground 20s infinite;
+         -moz-animation: colorBackground 20s infinite;
+         -o-animation: colorBackground 10s infinite
+         }
+         @keyframes colorBackground {
+         0% {
+         background-color: pink;
+         color: white;
+         }
+         20% {
+         background-color: red;
+         color: yellow;
+         }
+         50% {
+         background-color: white;
+         color: yellow;
+         }
+         70% {
+         background-color: yellow;
+         color: yellow;
+         }
+         90% {
+         background-color: green;
+         color: yellow;
+         }
+         }
+         .tag ul{
+            list-style-type: none;
+            padding: 0px;
+          }
+          .tag li{
+            display: inline-block;
+            padding: 20px 4px;
+          }
+         .xh1{
+          background: white;
+          margin-top: 10px;
+
+         }
+         .xh1 a{
+          text-decoration: none;
+          color: black;
+          font-size: 14px;
+         }
+         .xh2{
+          background: white;
+          margin-top: 10px;
+          font-size: 25px;
+
+          }
+          .xh2 a{
+            text-decoration: none;
+            font-size: 14px;
+          }
+          .xh3{
+            padding-top: 10px;
+          }
+          .xh3 ul{
+            list-style-type: none;
+            padding: 0px;
+          }
+          .xh3 li{
+            display: inline-block;
+            padding: 10px 1px;
+          }
+          .hovicon.effect-5 {
+    box-shadow: 0 0 0 2px rgba(255, 255, 255, 1);
+
+    overflow: hidden;
+    -webkit-transition: background 0.3s, color 0.3s, box-shadow 0.3s;
+    -moz-transition: background 0.3s, color 0.3s, box-shadow 0.3s;
+    transition: background 0.3s, color 0.3s, box-shadow 0.3s;
+
+}
+.hovicon.effect-5:after {
+    display: none;
+}
+.hovicon.effect-5:hover {
+    background: rgba(255, 255, 255, 0.5);
+    color: #FF99FF;
+    box-shadow: 0 0 0 8px rgba(255, 255, 255, 0.3);
+}
+.hovicon.effect-5.color-orange:hover {
+    box-shadow: 0 0 0 10px rgba(255, 165, 0, 0.3);
+}
+.hovicon.effect-5:hover i {
+    color: #FF99FF;
+}
+.hovicon.effect-4 {
+  
+    box-shadow: 0 0 0 4px rgba(255, 255, 255, 1);
+}
+
+.hovicon.effect-4.color-green {
+    box-shadow: 0 0 0 4px green;
+}
+.hovicon.effect-4.color-blue {
+    box-shadow: 0 0 0 4px blue;
+}
+.hovicon.effect-4.color-orange {
+    box-shadow: 0 0 0 4px orange;
+}
+
+.hovicon.effect-4:before {
+    line-height: 92px;
+}
+.hovicon.effect-4:after {
+    top: -4px;
+    left: -4px;
+    padding: 0;
+    z-index: 10;
+    border: 4px dashed #fff;
+}
+
+.hovicon.effect-4.color-green:after {
+    border-color: green;
+}
+
+.hovicon.effect-4.color-blue:after {
+    border-color: blue;
+}
+
+.hovicon.effect-4.color-orange:after {
+    border-color: orange;
+}
+
+.hovicon.effect-4.color-green:hover {
+    box-shadow: none;
+    color: green;
+}
+.hovicon.effect-4.color-blue:hover {
+    box-shadow: none;
+    color: blue;
+}
+.hovicon.effect-4.color-orange:hover {
+    box-shadow: none;
+    color: orange;
+}
+.hovicon.effect-4:hover i {
+    color: #fff;
+}
+.hovicon.effect-4.sub-b:hover {
+    -webkit-transition: box-shadow 0.2s;
+    -moz-transition: box-shadow 0.2s;
+    transition: box-shadow 0.2s;
+}
+.hovicon.effect-4.sub-b:hover:after {
+    -webkit-animation: spinAround 9s linear infinite;
+    -moz-animation: spinAround 9s linear infinite;
+    animation: spinAround 9s linear infinite;
+}
+@-webkit-keyframes spinAround {
+    from {
+        -webkit-transform: rotate(0deg)
+    }
+    to {
+        -webkit-transform: rotate(360deg);
+    }
+}
+@-moz-keyframes spinAround {
+    from {
+        -moz-transform: rotate(0deg)
+    }
+    to {
+        -moz-transform: rotate(360deg);
+    }
+}
+@keyframes spinAround {
+    from {
+        transform: rotate(0deg)
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+          .fy{
+            padding:0;
+            background: white;
+          margin-top: 10px;
+          font-size: 25px;
+          }
+         .fy ul{
+            list-style-type: none;
+            padding: 0px;
+          }
+          .fy li{
+            display: inline-block;
+            padding: 10px 1px;
+          }
+          .fy a{
+            text-decoration: none;
+            color: black;
+            font-size: 20px;
+          }
+          .card-body{
+             padding: 0;  
+          }
+          .card{
+            padding: 5px;
+
+            height: 300PX;
+
+          }
+         
+          .spp p{
+             color: red;
+          }
+          .spp img{
+            width: 150px;
+            height: 150px;
+          }
+          .spp h5{
+            font-size: 15px;
+            text-align: left;
+          }
+          #hidd{
+            display: none;
+          }
+          #myBtn {
+  display: none; /* Mặc định button sẽ được ẩn*/
+  position: fixed;
+  bottom: 20px;
+  right: 30px; 
+  z-index: 99; /* button được ưu tiên hiển thị đè lên các phần khác*/
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 14px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+	</style>
+</head>
+<body>
+	<div class="container col-md-12 head">
+		<div class="row">
+			<div class="col-md-4" style="text-align: center;">
+				Khu vực của bạn:
+		
+			    <select>
+			        <option value="">Chọn</option>
+			        <option value="1">Đà Nẵng</option>
+                    <option value="2">Hà Nội</option>
+                    <option value="3">Hồ Chí Minh</option>
+			    </select>
+			</div>
+			<div class="col-md-1"></div>
+			<div class="col-md-7 top">
+				<a href="ttsanpham.html">Nhanh hơn với ứng dụng</a>
+				<a href="ttsanpham.html">Chăm sóc khách hàng</a>
+				<a href="ttsanpham.html">Kiểm Tra Đơn Hàng</a>
+				<a href="ttsanpham.html">Đối tác cùng TG Online</a>
+				<a href="ttsanpham.html">Hỗ Trợ</a>
+			</div>
+		</div>
+			         
+		
+	</div>
+	<div class="container col-md-12 head1">
+		<div class="row">
+			<div class="col-md-4" align="center">
+				<img src="img/slide/logo.png">
+			</div>
+			<div class="col-md-4" style="padding-top: 25px;">
+				<div class="input-group mb-3">
+                  <input type="text" class="form-control" placeholder="Tìm kiếm sản phẩm, thương hiệu,........" aria-label="Recipient's username" aria-describedby="button-addon2" style="font-size: 14px;">
+                  <div class="input-group-append">
+                      <button class="btn btn-outline-secondary" type="button" id="button-addon2" style="background: red; color: white;">Tìm Kiếm</button>
+                  </div>
+                </div>
+			</div>
+      <div class="col-md-1 ico"  >
+        <a href="muahang.html"><img src="img/1.png"></a>
+      </div>
+			<div class="col-md-3 dn">
+				<a href="dangnhap/web/index.html">Đăng Nhập</a> / <a href="dangky/web/index.html">Đăng Kí</a>
+			</div>
+		</div>
+	</div>
+
+   <div class="container col-md-12 cen">
+   	<div class="row">
+   	<div class="col-md-1"></div>
+   	<div class="col-md-10" style="background: white;">
+   	  <div class="row">
+   	  	<div class="col-md-2 list">
+   	  		<div id="menu">
+               <ul>
+                  <li><a href="ttsanpham.html">Ẩm Thực</a>
+                  	  <ul class="sub-menu">
+                          <li><a href="ttsanpham.html">Hải sản tươi sống</a></li>
+                          <li><a href="ttsanpham.html">Cá</a></li>
+                          <li><a href="ttsanpham.html">Thịt các loại</a></li>
+                          <li><a href="ttsanpham.html">Đồ hộp</a></li>
+                          <li><a href="ttsanpham.html">Thức ăn nhanh</a></li>
+                          <li><a href="ttsanpham.html">Đặc sản địa phương</a></li>
+                          <li><a href="ttsanpham.html">Rong biển</a></li>
+                          <li><a href="ttsanpham.html">Trái cây & rau quả khô</a></li>
+                          <li><a href="ttsanpham.html">Các loại đậu hạt</a></li>
+                          <li><a href="ttsanpham.html">Các loại ngũ cốc</a></li>
+
+                       </ul>
+                  </li>
+                  <li><a href="ttsanpham.html">Đồ dùng gia dụng</a>
+                      <ul class="sub-menu" style="top:-101%">
+                          <li><a href="ttsanpham.html">Bếp & Phòng ăn</a></li>
+                          <li><a href="ttsanpham.html">Đèn</a></li>
+                          <li><a href="ttsanpham.html">Đồ dùng phòng ngủ</a></li>
+                          <li><a href="ttsanpham.html">Đồ dùng phòng tắm</a></li>
+                          <li><a href="ttsanpham.html">Đồ nội thất</a></li>
+                          <li><a href="ttsanpham.html">Trang trí nhà cửa</a></li>
+                          <li><a href="ttsanpham.html">Công cụ, DIY & ngoài trời</a></li>
+                          <li><a href="ttsanpham.html">Văn phòng & thủ công</a></li>
+                          <li><a href="ttsanpham.html">Sách</a></li>
+                          <li><a href="ttsanpham.html">Nhạc cụ</a></li>
+                       </ul>
+                  </li>
+                  <li><a href="ttsanpham.html">Điện lạnh-Điện gia dụng</a>
+                  	   <ul class="sub-menu"style="top:-204%">
+                          <li><a href="ttsanpham.html">Điều hòa</a></li>
+                          <li><a href="ttsanpham.html">Máy lạnh</a></li>
+                          <li><a href="ttsanpham.html">Tủ lạnh</a></li>
+                          <li><a href="ttsanpham.html">Máy giặc</a></li>
+                          <li><a href="ttsanpham.html">Máy sấy</a></li>
+                          <li><a href="ttsanpham.html">Quạt các loại</a></li>
+                          <li><a href="ttsanpham.html">Robot hút bụi</a></li>
+                          <li><a href="ttsanpham.html">Máy hút bụi</a></li>
+                          <li><a href="ttsanpham.html">Thiết bị nhà bếp</a></li>
+                          <li><a href="ttsanpham.html">Âm thanh gia đình</a></li>
+                       </ul>
+
+                  </li>
+                  <li><a href="ttsanpham.html">Thời trang nam</a>
+                       <ul class="sub-menu"style="top:-306%">
+                          <li><a href="ttsanpham.html">Trang Phục Nam</a></li>
+                          <li><a href="ttsanpham.html">Đồ Lót Nam</a></li>
+                          <li><a href="ttsanpham.html">Giày Nam</a></li>
+                          <li><a href="ttsanpham.html">Túi Xách Nam</a></li>
+                          <li><a href="ttsanpham.html">Phụ Kiện Nam</a></li>
+                          <li><a href="ttsanpham.html">Trang Phục Bé Trai</a></li>
+                          <li><a href="ttsanpham.html">Giày Bé Trai</a></li>
+                          <li><a href="ttsanpham.html">Phụ Kiện Bé Trai</a></li>
+                          <li><a href="ttsanpham.html">Túi Trẻ Em</a></li>
+                          <li><a href="ttsanpham.html"></a></li>
+                       </ul>
+                  </li>
+                  <li><a href="ttsanpham.html">Thời trang nữ</a>
+                       <ul class="sub-menu"style="top:-410%">
+                          <li><a href="ttsanpham.html">Trang Phục Nữ</a></li>
+                          <li><a href="ttsanpham.html">Giày Nữ</a></li>
+                          <li><a href="ttsanpham.html">Túi Xách Nữ</a></li>
+                          <li><a href="ttsanpham.html">Phụ Kiện Nữ</a></li>
+                          <li><a href="ttsanpham.html">Đồ Ngủ & Nội Y</a></li>
+                          <li><a href="ttsanpham.html">Trang Phục Bé Gái</a></li>
+                          <li><a href="ttsanpham.html">Giày Bé Gái</a></li>
+                          <li><a href="ttsanpham.html">Phụ Kiện Bé Gái</a></li>
+                          <li><a href="ttsanpham.html">Túi Trẻ Em</a></li>
+                          <li><a href="ttsanpham.html"></a></li>
+                       </ul>
+                  </li>
+                  <li><a href="ttsanpham.html">Phụ kiện thời trang</a>
+                       <ul class="sub-menu"style="top:-512%">
+                          <li><a href="ttsanpham.html">Đồng Hồ Nữ</a></li>
+                          <li><a href="ttsanpham.html">Đồng Hồ Nam</a></li>
+                          <li><a href="ttsanpham.html">Đồng Hồ Trẻ Em</a></li>
+                          <li><a href="ttsanpham.html">Kính Mát</a></li>
+                          <li><a href="ttsanpham.html">Kính Thời Trang</a></li>
+                          <li><a href="ttsanpham.html">Kính Áp Tròng</a></li>
+                          <li><a href="ttsanpham.html">Trang Sức Nữ</a></li>
+                          <li><a href="ttsanpham.html">Trang Sức Nam</a></li>
+                          <li><a href="ttsanpham.html">Phụ Kiện</a></li>
+                          <li><a href="ttsanpham.html"></a></li>
+                       </ul>
+                  </li>
+                  <li><a href="ttsanpham.html">làm đẹp & Sức khỏe</a>
+                       <ul class="sub-menu"style="top:-614%">
+                         <li><a href="ttsanpham.html">Trang Điểm</a></li>
+                          <li><a href="ttsanpham.html">Chăm Sóc Da</a></li>
+                          <li><a href="ttsanpham.html">Chăm Sóc Tóc</a></li>
+                          <li><a href="ttsanpham.html">Dụng Cụ Làm Đẹp</a></li>
+                          <li><a href="ttsanpham.html">Nước Hoa</a></li>
+                          <li><a href="ttsanpham.html">Chăm sóc cho Nam giới</a></li>
+                          <li><a href="ttsanpham.html">Chăm Sóc Cơ Thể</a></li>
+                          <li><a href="ttsanpham.html">Thực Phẩm Chức Năng</a></li>
+                          <li><a href="ttsanpham.html">Thiết Bị Y Tế</a></li>
+                          <li><a href="ttsanpham.html">Chăm sóc cá nhân</a></li>
+                       </ul>
+                  </li>
+                  <li><a href="ttsanpham.html">Hàng mẹ và bé</a>
+                       <ul class="sub-menu"style="top:-716%">
+                          <li><a href="ttsanpham.html">Chăm sóc trẻ sơ sinh, nhỏ</a></li>
+                          <li><a href="ttsanpham.html">Đồ dùng bú sữa & ăn dặm</a></li>
+                          <li><a href="ttsanpham.html">Quần áo & Phụ kiện</a></li>
+                          <li><a href="ttsanpham.html">Tã & Dụng cụ vệ sinh</a></li>
+                          <li><a href="ttsanpham.html">Tắm & Chăm sóc cơ thể</a></li>
+                          <li><a href="ttsanpham.html">Xe, Ghế, Địu và Nôi</a></li>
+                          <li><a href="ttsanpham.html"></a></li>
+                          <li><a href="ttsanpham.html"></a></li>
+                          <li><a href="ttsanpham.html"></a></li>
+                          <li><a href="ttsanpham.html"></a></li>
+                       </ul>
+                  </li>
+                  <li><a href="ttsanpham.html">Bánh kẹo & Đồ chơi</a>
+                       <ul class="sub-menu"style="top:-820%">
+                          <li><a href="ttsanpham.html">Các loại hạt & Trái cây khô</a></li>
+                          <li><a href="ttsanpham.html">Caramel & Kẹo bơ cứng</a></li>
+                          <li><a href="ttsanpham.html">Kẹo cao su & Kẹo the</a></li>
+                          <li><a href="ttsanpham.html">Kẹo đóng hộp</a></li>
+                          <li><a href="ttsanpham.html">Kẹo Marshmallow</a></li>
+                          <li><a href="ttsanpham.html">Kẹo Và Sô Cô La Hộp</a></li>
+                          <li><a href="ttsanpham.html">Socola viên & Socola hộp</a></li>
+                          <li><a href="ttsanpham.html">Thanh protein</a></li>
+                          <li><a href="ttsanpham.html">Các Loại Kẹo Khác</a></li>
+                          <li><a href="ttsanpham.html"></a></li>
+                       </ul>
+                  </li>
+                  <li><a href="ttsanpham.html">Thiết bị điện tử</a>
+                       <ul class="sub-menu"style="top:-922%">
+                         <li><a href="ttsanpham.html">Điện thoại di động</a></li>
+                          <li><a href="ttsanpham.html">Máy tính bảng</a></li>
+                          <li><a href="ttsanpham.html">Laptop</a></li>
+                          <li><a href="ttsanpham.html">Máy tính để bàn</a></li>
+                          <li><a href="ttsanpham.html">Âm thanh</a></li>
+                          <li><a href="ttsanpham.html">Máy chơi game</a></li>
+                          <li><a href="ttsanpham.html">Camera/Máy quay</a></li>
+                          <li><a href="ttsanpham.html">Camera giám sát</a></li>
+                          <li><a href="ttsanpham.html">Camera kỹ thuật số</a></li>
+                          <li><a href="ttsanpham.html">Thiết bị số</a></li>
+                       </ul>
+                  </li>
+                </ul>
+            </div>
+   	  	</div>
+   	  	<div class=" col-md-10" style=" padding: 0px; z-index: 0;">
+	    <div class="row banner" style="margin: 0px; padding: 0px; height: 100%">
+		    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" style="width: 100%;">
+		  	    <div class="carousel-inner">
+			        <div class="carousel-item active">
+			            <img class="d-block w-100" style="width: 100%" src="img/slide/1.jpg" alt="First slide">
+			        </div>
+			        <div class="carousel-item">
+			            <img class="d-block w-100" style="width: 100%" src="img/slide/2.jpg" alt="Second slide">
+			        </div>
+			        <div class="carousel-item">
+			            <img class="d-block w-100" style="width: 100%" src="img/slide/3.jpg" alt="Third slide">
+			        </div>
+			        <div class="carousel-item">
+			            <img class="d-block w-100" style="width: 100%" src="img/slide/4.jpg" alt="Four slide">
+			        </div>
+			        <div class="carousel-item">
+			            <img class="d-block w-100" style="width: 100%" src="img/slide/5.jpg" alt="Five slide">
+			        </div>
+		  	    </div>
+		  	    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+		    	    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+		    	    <span class="sr-only">Previous</span>
+		  	    </a>
+		  	    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+		         	<span class="carousel-control-next-icon" aria-hidden="true"></span>
+		    	    <span class="sr-only">Next</span>
+		     	</a>
+		    </div>
+    	</div>
+      </div>     	
+   	  </div>	
+   </div>
+   </div>
+   </div>
+   
+   <div class="container col-md-10 tag xh1" align="center">
+      <ul>
+        <li>
+          <button type="button" class="btn btn-light hovicon effect-4 sub-b color-orange">
+          <a href="ttsanpham.html">
+            <img src="img/icon/deal.png" style="width: 100px; height: 100px;">
+
+          </a>
+          </br>
+          <a href="ttsanpham.html">Deal hot mỗi ngày</a>
+          </button>
+        </li>
+
+        <li>
+          <button type="button" class="btn btn-light hovicon effect-4 sub-b color-orange">
+          <a href="ttsanpham.html">
+            <img src="img/icon/thucpham.png" style="width: 100px; height: 100px;">
+          </a>
+          </br>
+          <a href="ttsanpham.html">Thức ăn các loại</a>
+        </button>
+        </li>
+
+        <li>
+          <button type="button" class="btn btn-light hovicon effect-4 sub-b color-orange">
+          <a href="ttsanpham.html">
+            <img src="img/icon/thit.png" style="width: 100px; height: 100px;">
+          </a>
+          </br>
+          <a href="ttsanpham.html">Thịt phẩm an toàn</a>
+          </button>
+        </li>
+
+        <li>
+          <button type="button" class="btn btn-light hovicon effect-4 sub-b color-orange">
+          <a href="ttsanpham.html">
+            <img src="img/icon/fix.png" style="width: 100px; height: 100px;">
+          </a>
+          </br>
+          <a href="ttsanpham.html">Hải sản tươi sống</a>
+        </button>
+        </li>
+
+        <li>
+          <button type="button" class="btn btn-light hovicon effect-4 sub-b color-orange">
+          <a href="ttsanpham.html">
+            <img src="img/icon/gd.png" style="width: 100px; height: 100px;">
+          </a>
+          </br>
+          <a href="ttsanpham.html">Đồ hàng gia dụng</a>
+        </button>
+        </li>
+
+        <li>
+          <button type="button" class="btn btn-light hovicon effect-4 sub-b color-orange" href="">
+          <a href="ttsanpham.html">
+            <img src="img/icon/traicay.png" style="width: 100px; height: 100px;">
+          </a>
+          </br>
+          <a href="ttsanpham.html">Đồ ăn tráng miệng</a>
+        </button>
+        </li>
+
+        <li>
+          <button type="button" class="btn btn-light hovicon effect-4 sub-b color-orange" href="">
+          <a href="ttsanpham.html">
+            <img src="img/icon/coffe.png" style="width: 100px; height: 100px;">
+          </a>
+          </br>
+          <a href="ttsanpham.html">Giải khát-Nhâm nhi</a>
+        </button>
+        </li>
+
+        <li>
+          <button type="button" class="btn btn-light hovicon effect-4 sub-b color-orange" href="">
+          <a href="ttsanpham.html">
+            <img src="img/icon/xt.png" style="width: 100px; height: 100px;">
+          </a>
+          </br>
+          <a href="ttsanpham.html">Xem thêm</a>
+        </button>
+        </li>
+
+      </ul>
+   </div>
+    
+   
+
+   <div class="container col-md-10 xh2">
+     <div class="col-md-12 " style="padding-top: 10px;">
+          <table style="width: 100%;">
+            <tr style="width: 100%">
+              <td align="left" style="width: 50%">
+                <img src="img/ico.png"> Xu hướng 
+              </td>
+              <td align="right"style="width: 50%">
+                <a href="ttsanpham.html">Xem thêm ></a>
+              </td>
+            </tr>
+          </table>
+     </div>
+
+     <div class="col-md-12 xh3" align="center">
+        <ul>
+          <li>
+            <div class="card zoom" style="width: 18rem;">
+              <img class="card-img-top" src="img/xh/1.png" alt="Card image cap" style="width: 200px; height: 200px;">
+                <div class="card-body">
+                  <p class="card-text"></br>Thịt, cá, trứng, sữa tươi</p>
+                </div>
+            </div>
+          </li>
+          <li>
+            <div class="card zoom" style="width: 18rem;">
+              <img class="card-img-top" src="img/xh/2.png" alt="Card image cap" style="width: 200px; height: 200px">
+                <div class="card-body">
+                  <p class="card-text"></br>Đồ gia dụng</p>
+                </div>
+            </div>
+          </li>
+          <li>
+            <div class="card zoom" style="width: 18rem;">
+              <img class="card-img-top" src="img/xh/3.png" alt="Card image cap" style="width: 200px; height: 200px">
+                <div class="card-body">
+                  <p class="card-text"></br>Thời trang nữ</p>
+                </div>
+            </div>
+          </li>
+          <li>
+            <div class="card zoom" style="width: 18rem;">
+              <img class="card-img-top" src="img/xh/4.png" alt="Card image cap" style="width: 200px; height: 200px">
+                <div class="card-body">
+                  <p class="card-text"></br>Đồ ăn vặt</p>
+                </div>
+            </div>
+          </li>
+          
+        </ul>
+        
+     </div>
+   </div>
+ 
+   <div class="container col-md-10 fy">
+       <div class="col-md-12" style="padding-top: 10px; padding-left: 30px;">
+          <img src="img/ico.png"> Dành riêng cho bạn
+       </div>
+       <div class="col-md-12 spp" align="center" style="padding-top: 20px;">
+         <ul>
+           <li>
+             <a href="ttsanpham.html">
+               <div class="card hovicon effect-5 sub-a color-orange" style="width: 9rem;">
+                 <img class="card-img-top" src="img/slidesp/1.jpg" alt="Card image cap">
+                     <div class="card-body">
+                        <h5 class="card-title">Samsung Galaxy A10 2GB/32GB Xanh dương</h5>
+                         <p class="card-text">2.829.000đ</p>
+                        <a href="ttsanpham.html" class="btn btn-danger">Mua ngay</a>
+                      </div>
+               </div>
+             </a>
+           </li>
+           <li>
+             <a href="ttsanpham.html">
+               <div class="card hovicon effect-5 sub-a color-orange" style="width: 9rem;">
+                 <img class="card-img-top" src="img/sp/2.jpg" alt="Card image cap">
+                     <div class="card-body">
+                        <h5 class="card-title">Nồi luộc gà chống dính đáy từ Elmich ELIV-6302428BR</h5>
+                         <p class="card-text">299.000đ </p>
+                        <a href="ttsanpham.html" class="btn btn-danger">Mua ngay</a>
+                      </div>
+               </div>
+             </a>
+           </li>
+           <li>
+             <a href="ttsanpham.html">
+               <div class="card hovicon effect-5 sub-a color-orange" style="width: 9rem;">
+                 <img class="card-img-top" src="img/sp/3.jpg" alt="Card image cap">
+                     <div class="card-body">
+                        <h5 class="card-title">Máy làm sữa hạt đa năng Ranbem 769s </br></h5>
+                         <p class="card-text">1.359.000đ</p>
+                        <a href="ttsanpham.html" class="btn btn-danger">Mua ngay</a>
+                      </div>
+               </div>
+             </a>
+           </li>
+           <li>
+             <a href="ttsanpham.html">
+               <div class="card hovicon effect-5 sub-a color-orange" style="width: 9rem;">
+                 <img class="card-img-top" src="img/sp/4.jpg" alt="Card image cap">
+                     <div class="card-body">
+                        <h5 class="card-title">30 gói nước uống hồng sâm 6 năm tuổi Hàn Quốc...</h5>
+                         <p class="card-text">375.000đ</p>
+                        <a href="ttsanpham.html" class="btn btn-danger">Mua ngay</a>
+                      </div>
+               </div>
+             </a>
+           </li>
+           <li>
+             <a href="ttsanpham.html">
+               <div class="card hovicon effect-5 sub-a color-orange" style="width: 9rem;">
+                 <img class="card-img-top" src="img/sp/5.jpg" alt="Card image cap">
+                     <div class="card-body">
+                        <h5 class="card-title">Tã-bỉm quần Huggies Dry L68 - Túi 68 miếng</h5>
+                         <p class="card-text">300.000đ</p>
+                        <a href="ttsanpham.html" class="btn btn-danger">Mua ngay</a>
+                      </div>
+               </div>
+             </a>
+           </li>
+           <li>
+             <a href="ttsanpham.html">
+               <div class="card hovicon effect-5 sub-a color-orange" style="width: 9rem;">
+                 <img class="card-img-top" src="img/sp/6.jpg" alt="Card image cap">
+                     <div class="card-body">
+                        <h5 class="card-title">(ADR Trợ Giá) Buffet Lẩu "Trên Đĩa Bay Khổng Lồ"</h5>
+                         <p class="card-text">175.000đ </p>
+                        <a href="ttsanpham.html" class="btn btn-danger">Mua ngay</a>
+                      </div>
+               </div>
+             </a>
+           </li>
+           <li>
+             <a href="ttsanpham.html">
+               <div class="card hovicon effect-5 sub-a color-orange" style="width: 9rem;">
+                 <img class="card-img-top" src="img/sp/7.jpg" alt="Card image cap">
+                     <div class="card-body">
+                        <h5 class="card-title">Vở học sinh 48 trang 5 ly &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</h5>
+                         <p class="card-text">8.000đ</p>
+                        <a href="ttsanpham.html" class="btn btn-danger">Mua ngay</a>
+                      </div>
+               </div>
+             </a>
+           </li>
+           <li>
+             <a href="ttsanpham.html">
+               <div class="card hovicon effect-5 sub-a color-orange" style="width: 9rem;">
+                 <img class="card-img-top" src="img/sp/8.jpg" alt="Card image cap">
+                     <div class="card-body">
+                        <h5 class="card-title">Bộ dụng cụ đa năng Bosch 12 món</h5>
+                         <p class="card-text">489.000đ</p>
+                        <a href="ttsanpham.html" class="btn btn-danger">Mua ngay</a>
+                      </div>
+               </div>
+             </a>
+           </li>
+           <li>
+             <a href="ttsanpham.html">
+               <div class="card hovicon effect-5 sub-a color-orange" style="width: 9rem;">
+                 <img class="card-img-top" src="img/sp/9.jpg" alt="Card image cap">
+                     <div class="card-body">
+                        <h5 class="card-title"> Bộ vặn vít Bosch GO (Solo) - Tặng đồ khui Bosch </h5>
+                         <p class="card-text">549.000đ </p>
+                        <a href="ttsanpham.html" class="btn btn-danger">Mua ngay</a>
+                      </div>
+               </div>
+             </a>
+           </li>
+           <li>
+             <a href="ttsanpham.html">
+               <div class="card hovicon effect-5 sub-a color-orange" style="width: 9rem;">
+                 <img class="card-img-top" src="img/sp/10.jpg" alt="Card image cap">
+                     <div class="card-body">
+                        <h5 class="card-title"> Bộ máy phun xịt rửa áp lực cao Bosch Easy AQT</h5>
+                         <p class="card-text">2.299.000đ</p>
+                        <a href="ttsanpham.html" class="btn btn-danger">Mua ngay</a>
+                      </div>
+               </div>
+             </a>
+           </li>
+           <li>
+             <a href="ttsanpham.html">
+               <div class="card hovicon effect-5 sub-a color-orange" style="width: 9rem;">
+                 <img class="card-img-top" src="img/sp/11.jpg" alt="Card image cap">
+                     <div class="card-body">
+                        <h5 class="card-title"> Máy ảnh DSLR Canon EOS 750D Kit EF-S 18-55 IS</h5>
+                         <p class="card-text">11.890.000đ</p>
+                        <a href="ttsanpham.html" class="btn btn-danger">Mua ngay</a>
+                      </div>
+               </div>
+             </a>
+           </li>
+           <li>
+             <a href="ttsanpham.html">
+               <div class="card hovicon effect-5 sub-a color-orange" style="width: 9rem;">
+                 <img class="card-img-top" src="img/sp/12.jpg" alt="Card image cap">
+                     <div class="card-body">
+                        <h5 class="card-title"> Samsung Galaxy Watch 46mm Bạc (Hàng chính hãng)</h5>
+                         <p class="card-text">7.490.000đ </p>
+                        <a href="ttsanpham.html" class="btn btn-danger">Mua ngay</a>
+                      </div>
+               </div>
+             </a>
+           </li>
+           <li>
+             <a href="ttsanpham.html">
+               <div class="card hovicon effect-5 sub-a color-orange" style="width: 9rem;">
+                 <img class="card-img-top" src="img/sp/13.jpg" alt="Card image cap">
+                     <div class="card-body">
+                        <h5 class="card-title"> Robot hút bụi lau nhà thông minh Ecovacs Deebot</h5>
+                         <p class="card-text">6.390.000đ </p>
+                        <a href="ttsanpham.html" class="btn btn-danger">Mua ngay</a>
+                      </div>
+               </div>
+             </a>
+           </li>
+           <li>
+             <a href="ttsanpham.html">
+               <div class="card hovicon effect-5 sub-a color-orange" style="width: 9rem;">
+                 <img class="card-img-top" src="img/sp/16.jpg" alt="Card image cap">
+                     <div class="card-body">
+                        <h5 class="card-title"> Loa Bluetooth X-mini Xoundbar &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp </br></h5>
+                         <p class="card-text">290.000đ</p>
+                        <a href="ttsanpham.html" class="btn btn-danger">Mua ngay</a>
+                      </div>
+               </div>
+             </a>
+           </li>
+           <li>
+             <a href="ttsanpham.html">
+               <div class="card hovicon effect-5 sub-a color-orange" style="width: 9rem;">
+                 <img class="card-img-top" src="img/sp/17.jpg" alt="Card image cap">
+                     <div class="card-body">
+                        <h5 class="card-title"> Tai nghe không dây chống ồn Sony WH-1000XM3 Đen</h5>
+                         <p class="card-text">7.200.000đ</p>
+                        <a href="ttsanpham.html" class="btn btn-danger">Mua ngay</a>
+                      </div>
+               </div>
+             </a>
+           </li>
+           <li>
+             <a href="ttsanpham.html">
+               <div class="card hovicon effect-5 sub-a color-orange" style="width: 9rem;">
+                 <img class="card-img-top" src="img/sp/18.jpg" alt="Card image cap">
+                     <div class="card-body">
+                        <h5 class="card-title"> Snack rong biển vị thịt nướng Taokae Big Roll 3,6g</h5>
+                         <p class="card-text">35.000đ</p>
+                        <a href="ttsanpham.html" class="btn btn-danger">Mua ngay</a>
+                      </div>
+               </div>
+             </a>
+           </li>
+           <li>
+             <a href="ttsanpham.html">
+               <div class="card hovicon effect-5 sub-a color-orange" style="width: 9rem;">
+                 <img class="card-img-top" src="img/sp/19.jpg" alt="Card image cap">
+                     <div class="card-body">
+                        <h5 class="card-title"> Tinh nghệ canxi Honimore 160g&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</br></h5>
+                         <p class="card-text">99.000đ</p>
+                        <a href="ttsanpham.html" class="btn btn-danger">Mua ngay</a>
+                      </div>
+               </div>
+             </a>
+           </li>
+           <li>
+             <a href="ttsanpham.html">
+               <div class="card hovicon effect-5 sub-a color-orange" style="width: 9rem;">
+                 <img class="card-img-top" src="img/sp/20.jpg" alt="Card image cap">
+                     <div class="card-body">
+                        <h5 class="card-title"> Hộp trà xanh long phượng Tân Xanh 200 gram</h5>
+                         <p class="card-text">330.000đ</p>
+                        <a href="ttsanpham.html" class="btn btn-danger">Mua ngay</a>
+                      </div>
+               </div>
+             </a>
+           </li>
+
+           <li>
+             <a href="ttsanpham.html">
+               <div class="card hovicon effect-5 sub-a color-orange" style="width: 9rem;">
+                 <img class="card-img-top" src="img/sp/21.jpg" alt="Card image cap">
+                     <div class="card-body">
+                        <h5 class="card-title"> Sữa bột Etomil Perfect 900g&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</br></h5>
+                         <p class="card-text">520.000đ </p>
+                        <a href="ttsanpham.html" class="btn btn-danger">Mua ngay</a>
+                      </div>
+               </div>
+             </a>
+           </li>
+           <li>
+             <a href="ttsanpham.html">
+               <div class="card hovicon effect-5 sub-a color-orange" style="width: 9rem;">
+                 <img class="card-img-top" src="img/sp/22.jpg" alt="Card image cap">
+                     <div class="card-body">
+                        <h5 class="card-title"> Hộp trà xanh tứ long Tân Cương Xanh 400 gram</h5>
+                         <p class="card-text">599.000đ </p>
+                        <a href="ttsanpham.html" class="btn btn-danger">Mua ngay</a>
+                      </div>
+               </div>
+             </a>
+           </li>
+           <li>
+             <a href="ttsanpham.html">
+               <div class="card hovicon effect-5 sub-a color-orange" style="width: 9rem;">
+                 <img class="card-img-top" src="img/sp/23.jpg" alt="Card image cap">
+                     <div class="card-body">
+                        <h5 class="card-title"> Áo sơ mi tay loe xẻ đính nơ The One Fashion ADD1523</h5>
+                         <p class="card-text">235.000đ</p>
+                        <a href="ttsanpham.html" class="btn btn-danger">Mua ngay</a>
+                      </div>
+               </div>
+             </a>
+           </li>
+           <li>
+             <a href="ttsanpham.html">
+               <div class="card hovicon effect-5 sub-a color-orange" style="width: 9rem;">
+                 <img class="card-img-top" src="img/sp/24.jpg" alt="Card image cap">
+                     <div class="card-body">
+                        <h5 class="card-title"> Áo sơ mi nữ Gumac A03901 nút ngọc trai màu trắng</h5>
+                         <p class="card-text">199.000đ</p>
+                        <a href="ttsanpham.html" class="btn btn-danger">Mua ngay</a>
+                      </div>
+               </div>
+             </a>
+           </li>
+           <li>
+             <a href="ttsanpham.html">
+               <div class="card hovicon effect-5 sub-a color-orange" style="width: 9rem;">
+                 <img class="card-img-top" src="img/sp/14.jpg" alt="Card image cap">
+                     <div class="card-body">
+                        <h5 class="card-title"> Đèn LED thông minh Sonoff B1 (Trắng)</h5>
+                         <p class="card-text">309.000đ</p>
+                        <a href="ttsanpham.html" class="btn btn-danger">Mua ngay</a>
+                      </div>
+               </div>
+             </a>
+           </li>
+           <li>
+             <a href="ttsanpham.html">
+               <div class="card hovicon effect-5 sub-a color-orange" style="width: 9rem;">
+                 <img class="card-img-top" src="img/sp/15.jpg" alt="Card image cap">
+                     <div class="card-body">
+                        <h5 class="card-title"> Thiết bị định vị gắn sim có camera X009 (Đen)</h5>
+                         <p class="card-text">369.000đ </p>
+                        <a href="ttsanpham.html" class="btn btn-danger">Mua ngay</a>
+                      </div>
+               </div>
+             </a>
+           </li>
+         </ul>
+           
+<ul id="hidd">
+  <li>
+             <a href="ttsanpham.html">
+               <div class="card hovicon effect-5 sub-a color-orange" style="width: 9rem;">
+                 <img class="card-img-top" src="img/sp/1.jpg" alt="Card image cap">
+                     <div class="card-body">
+                        <h5 class="card-title">Chảo chống dính đáy từ Elmich EDA-42126 26cm</h5>
+                         <p class="card-text">299.000đ </p>
+                        <a href="ttsanpham.html" class="btn btn-danger">Mua ngay</a>
+                      </div>
+               </div>
+             </a>
+           </li>
+           <li>
+             <a href="ttsanpham.html">
+               <div class="card hovicon effect-5 sub-a color-orange" style="width: 9rem;">
+                 <img class="card-img-top" src="img/sp/2.jpg" alt="Card image cap">
+                     <div class="card-body">
+                        <h5 class="card-title">Nồi luộc gà chống dính đáy từ Elmich ELIV-6302428BR</h5>
+                         <p class="card-text">299.000đ </p>
+                        <a href="ttsanpham.html" class="btn btn-danger">Mua ngay</a>
+                      </div>
+               </div>
+             </a>
+           </li>
+           <li>
+             <a href="ttsanpham.html">
+               <div class="card hovicon effect-5 sub-a color-orange" style="width: 9rem;">
+                 <img class="card-img-top" src="img/sp/3.jpg" alt="Card image cap">
+                     <div class="card-body">
+                        <h5 class="card-title">Máy làm sữa hạt đa năng Ranbem 769s </br></h5>
+                         <p class="card-text">1.359.000đ</p>
+                        <a href="ttsanpham.html" class="btn btn-danger">Mua ngay</a>
+                      </div>
+               </div>
+             </a>
+           </li>
+           <li>
+             <a href="ttsanpham.html">
+               <div class="card hovicon effect-5 sub-a color-orange" style="width: 9rem;">
+                 <img class="card-img-top" src="img/sp/4.jpg" alt="Card image cap">
+                     <div class="card-body">
+                        <h5 class="card-title">30 gói nước uống hồng sâm 6 năm tuổi Hàn Quốc...</h5>
+                         <p class="card-text">375.000đ</p>
+                        <a href="ttsanpham.html" class="btn btn-danger">Mua ngay</a>
+                      </div>
+               </div>
+             </a>
+           </li>
+           <li>
+             <a href="ttsanpham.html">
+               <div class="card hovicon effect-5 sub-a color-orange" style="width: 9rem;">
+                 <img class="card-img-top" src="img/sp/5.jpg" alt="Card image cap">
+                     <div class="card-body">
+                        <h5 class="card-title">Tã-bỉm quần Huggies Dry L68 - Túi 68 miếng</h5>
+                         <p class="card-text">300.000đ</p>
+                        <a href="ttsanpham.html" class="btn btn-danger">Mua ngay</a>
+                      </div>
+               </div>
+             </a>
+           </li>
+           <li>
+             <a href="ttsanpham.html">
+               <div class="card hovicon effect-5 sub-a color-orange" style="width: 9rem;">
+                 <img class="card-img-top" src="img/sp/6.jpg" alt="Card image cap">
+                     <div class="card-body">
+                        <h5 class="card-title">(ADR Trợ Giá) Buffet Lẩu "Trên Đĩa Bay Khổng Lồ"</h5>
+                         <p class="card-text">175.000đ </p>
+                        <a href="ttsanpham.html" class="btn btn-danger">Mua ngay</a>
+                      </div>
+               </div>
+             </a>
+           </li>
+           <li>
+             <a href="ttsanpham.html">
+               <div class="card hovicon effect-5 sub-a color-orange" style="width: 9rem;">
+                 <img class="card-img-top" src="img/sp/7.jpg" alt="Card image cap">
+                     <div class="card-body">
+                        <h5 class="card-title">Vở học sinh 48 trang 5 ly &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</h5>
+                         <p class="card-text">8.000đ</p>
+                        <a href="ttsanpham.html" class="btn btn-danger">Mua ngay</a>
+                      </div>
+               </div>
+             </a>
+           </li>
+           <li>
+             <a href="ttsanpham.html">
+               <div class="card hovicon effect-5 sub-a color-orange" style="width: 9rem;">
+                 <img class="card-img-top" src="img/sp/8.jpg" alt="Card image cap">
+                     <div class="card-body">
+                        <h5 class="card-title">Bộ dụng cụ đa năng Bosch 12 món</h5>
+                         <p class="card-text">489.000đ</p>
+                        <a href="ttsanpham.html" class="btn btn-danger">Mua ngay</a>
+                      </div>
+               </div>
+             </a>
+           </li>
+           <li>
+             <a href="ttsanpham.html">
+               <div class="card hovicon effect-5 sub-a color-orange" style="width: 9rem;">
+                 <img class="card-img-top" src="img/sp/9.jpg" alt="Card image cap">
+                     <div class="card-body">
+                        <h5 class="card-title"> Bộ vặn vít Bosch GO (Solo) - Tặng đồ khui Bosch </h5>
+                         <p class="card-text">549.000đ </p>
+                        <a href="ttsanpham.html" class="btn btn-danger">Mua ngay</a>
+                      </div>
+               </div>
+             </a>
+           </li>
+           <li>
+             <a href="ttsanpham.html">
+               <div class="card hovicon effect-5 sub-a color-orange" style="width: 9rem;">
+                 <img class="card-img-top" src="img/sp/10.jpg" alt="Card image cap">
+                     <div class="card-body">
+                        <h5 class="card-title"> Bộ máy phun xịt rửa áp lực cao Bosch Easy AQT</h5>
+                         <p class="card-text">2.299.000đ</p>
+                        <a href="ttsanpham.html" class="btn btn-danger">Mua ngay</a>
+                      </div>
+               </div>
+             </a>
+           </li>
+           <li>
+             <a href="ttsanpham.html">
+               <div class="card hovicon effect-5 sub-a color-orange" style="width: 9rem;">
+                 <img class="card-img-top" src="img/sp/11.jpg" alt="Card image cap">
+                     <div class="card-body">
+                        <h5 class="card-title"> Máy ảnh DSLR Canon EOS 750D Kit EF-S 18-55 IS</h5>
+                         <p class="card-text">11.890.000đ</p>
+                        <a href="ttsanpham.html" class="btn btn-danger">Mua ngay</a>
+                      </div>
+               </div>
+             </a>
+           </li>
+           <li>
+             <a href="ttsanpham.html">
+               <div class="card hovicon effect-5 sub-a color-orange" style="width: 9rem;">
+                 <img class="card-img-top" src="img/sp/12.jpg" alt="Card image cap">
+                     <div class="card-body">
+                        <h5 class="card-title"> Samsung Galaxy Watch 46mm Bạc (Hàng chính hãng)</h5>
+                         <p class="card-text">7.490.000đ </p>
+                        <a href="ttsanpham.html" class="btn btn-danger">Mua ngay</a>
+                      </div>
+               </div>
+             </a>
+           </li>
+           <li>
+             <a href="ttsanpham.html">
+               <div class="card hovicon effect-5 sub-a color-orange" style="width: 9rem;">
+                 <img class="card-img-top" src="img/sp/13.jpg" alt="Card image cap">
+                     <div class="card-body">
+                        <h5 class="card-title"> Robot hút bụi lau nhà thông minh Ecovacs Deebot</h5>
+                         <p class="card-text">6.390.000đ </p>
+                        <a href="ttsanpham.html" class="btn btn-danger">Mua ngay</a>
+                      </div>
+               </div>
+             </a>
+           </li>
+           <li>
+             <a href="ttsanpham.html">
+               <div class="card hovicon effect-5 sub-a color-orange" style="width: 9rem;">
+                 <img class="card-img-top" src="img/sp/16.jpg" alt="Card image cap">
+                     <div class="card-body">
+                        <h5 class="card-title"> Loa Bluetooth X-mini Xoundbar &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp </br></h5>
+                         <p class="card-text">290.000đ</p>
+                        <a href="ttsanpham.html" class="btn btn-danger">Mua ngay</a>
+                      </div>
+               </div>
+             </a>
+           </li>
+           <li>
+             <a href="ttsanpham.html">
+               <div class="card hovicon effect-5 sub-a color-orange" style="width: 9rem;">
+                 <img class="card-img-top" src="img/sp/17.jpg" alt="Card image cap">
+                     <div class="card-body">
+                        <h5 class="card-title"> Tai nghe không dây chống ồn Sony WH-1000XM3 Đen</h5>
+                         <p class="card-text">7.200.000đ</p>
+                        <a href="ttsanpham.html" class="btn btn-danger">Mua ngay</a>
+                      </div>
+               </div>
+             </a>
+           </li>
+           <li>
+             <a href="ttsanpham.html">
+               <div class="card hovicon effect-5 sub-a color-orange" style="width: 9rem;">
+                 <img class="card-img-top" src="img/sp/18.jpg" alt="Card image cap">
+                     <div class="card-body">
+                        <h5 class="card-title"> Snack rong biển vị thịt nướng Taokae Big Roll 3,6g</h5>
+                         <p class="card-text">35.000đ</p>
+                        <a href="ttsanpham.html" class="btn btn-danger">Mua ngay</a>
+                      </div>
+               </div>
+             </a>
+           </li>
+           <li>
+             <a href="ttsanpham.html">
+               <div class="card hovicon effect-5 sub-a color-orange" style="width: 9rem;">
+                 <img class="card-img-top" src="img/sp/19.jpg" alt="Card image cap">
+                     <div class="card-body">
+                        <h5 class="card-title"> Tinh nghệ canxi Honimore 160g&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</br></h5>
+                         <p class="card-text">99.000đ</p>
+                        <a href="ttsanpham.html" class="btn btn-danger">Mua ngay</a>
+                      </div>
+               </div>
+             </a>
+           </li>
+           <li>
+             <a href="ttsanpham.html">
+               <div class="card hovicon effect-5 sub-a color-orange" style="width: 9rem;">
+                 <img class="card-img-top" src="img/sp/20.jpg" alt="Card image cap">
+                     <div class="card-body">
+                        <h5 class="card-title"> Hộp trà xanh long phượng Tân Xanh 200 gram</h5>
+                         <p class="card-text">330.000đ</p>
+                        <a href="ttsanpham.html" class="btn btn-danger">Mua ngay</a>
+                      </div>
+               </div>
+             </a>
+           </li>
+
+           <li>
+             <a href="ttsanpham.html">
+               <div class="card hovicon effect-5 sub-a color-orange" style="width: 9rem;">
+                 <img class="card-img-top" src="img/sp/21.jpg" alt="Card image cap">
+                     <div class="card-body">
+                        <h5 class="card-title"> Sữa bột Etomil Perfect 900g&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</br></h5>
+                         <p class="card-text">520.000đ </p>
+                        <a href="ttsanpham.html" class="btn btn-danger">Mua ngay</a>
+                      </div>
+               </div>
+             </a>
+           </li>
+           <li>
+             <a href="ttsanpham.html">
+               <div class="card hovicon effect-5 sub-a color-orange" style="width: 9rem;">
+                 <img class="card-img-top" src="img/sp/22.jpg" alt="Card image cap">
+                     <div class="card-body">
+                        <h5 class="card-title"> Hộp trà xanh tứ long Tân Cương Xanh 400 gram</h5>
+                         <p class="card-text">599.000đ </p>
+                        <a href="ttsanpham.html" class="btn btn-danger">Mua ngay</a>
+                      </div>
+               </div>
+             </a>
+           </li>
+           <li>
+             <a href="ttsanpham.html">
+               <div class="card hovicon effect-5 sub-a color-orange" style="width: 9rem;">
+                 <img class="card-img-top" src="img/sp/23.jpg" alt="Card image cap">
+                     <div class="card-body">
+                        <h5 class="card-title"> Áo sơ mi tay loe xẻ đính nơ The One Fashion ADD1523</h5>
+                         <p class="card-text">235.000đ</p>
+                        <a href="ttsanpham.html" class="btn btn-danger">Mua ngay</a>
+                      </div>
+               </div>
+             </a>
+           </li>
+           <li>
+             <a href="ttsanpham.html">
+               <div class="card hovicon effect-5 sub-a color-orange" style="width: 9rem;">
+                 <img class="card-img-top" src="img/sp/24.jpg" alt="Card image cap">
+                     <div class="card-body">
+                        <h5 class="card-title"> Áo sơ mi nữ Gumac A03901 nút ngọc trai màu trắng</h5>
+                         <p class="card-text">199.000đ</p>
+                        <a href="ttsanpham.html" class="btn btn-danger">Mua ngay</a>
+                      </div>
+               </div>
+             </a>
+           </li>
+           <li>
+             <a href="ttsanpham.html">
+               <div class="card hovicon effect-5 sub-a color-orange" style="width: 9rem;">
+                 <img class="card-img-top" src="img/sp/14.jpg" alt="Card image cap">
+                     <div class="card-body">
+                        <h5 class="card-title"> Đèn LED thông minh Sonoff B1 (Trắng)</h5>
+                         <p class="card-text">309.000đ</p>
+                        <a href="ttsanpham.html" class="btn btn-danger">Mua ngay</a>
+                      </div>
+               </div>
+             </a>
+           </li>
+           <li>
+             <a href="ttsanpham.html">
+               <div class="card hovicon effect-5 sub-a color-orange" style="width: 9rem;">
+                 <img class="card-img-top" src="img/sp/15.jpg" alt="Card image cap">
+                     <div class="card-body">
+                        <h5 class="card-title"> Thiết bị định vị gắn sim có camera X009 (Đen)</h5>
+                         <p class="card-text">369.000đ </p>
+                        <a href="ttsanpham.html" class="btn btn-danger">Mua ngay</a>
+                      </div>
+               </div>
+             </a>
+           </li>
+</ul>
+<ul>
+  
+  <li >
+  </br>
+  
+  <div >
+    
+    <button type="button" class="btn btn-warning" id="btn1">Xem Thêm</button>
+    
+  </div>
+  
+</li>
+
+</ul>
+</div>
+</div>
+   <div class="container col-md-12" style="background: white; padding-top: 10px">
+     <div class="row">
+
+        <div class="col-md-4" style="text-align: center;">
+          <img src="img/slide/logo.png">
+        </div>
+        <div class="col-md-8">
+            <div style="font-size: 13px; padding-left: 20px;">
+              Mã số doanh nghiệp: 0104918404 do Sở Kế hoạch và Đầu tư TP. Hà Nội cấp lần đầu ngày 20/09/2010.
+            </br>
+            Trụ sở chính: KTX Cao đẳng CNTT, phường Hòa Quý, Quận Ngũ Hành Sơn, TP Đà Nẵng.
+            </br>
+            © 2018 Bản quyền thuộc về Công Ty Cổ Phần Dịch Vụ Thương Mại Tổng Hợp VanDoan
+            </div>
+        </div>
+     </div>
+   </div>
+
+<!-- Load jquery trước khi load bootstrap js -->
+<script src="jquery-3.3.1.min.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<button id="myBtn" title="Go to top">Lên trên</button>
+<script>
+    //Khi người dùng cuộn chuột thì gọi hàm scrollFunction
+    window.onscroll = function() {scrollFunction()};
+    // khai báo hàm scrollFunction
+    function scrollFunction() {
+        // Kiểm tra vị trí hiện tại của con trỏ so với nội dung trang
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            //nếu lớn hơn 20px thì hiện button
+            document.getElementById("myBtn").style.display = "block";
+          } else {
+             //nếu nhỏ hơn 20px thì ẩn button
+             document.getElementById("myBtn").style.display = "none";
+           }
+         }
+    //gán sự kiện click cho button
+    document.getElementById('myBtn').addEventListener("click", function(){
+        //Nếu button được click thì nhảy về đầu trang
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      });
+    </script>
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "hi") {
+          x.className += " responsive";
+        } else {
+          x.className = "hi";
+        }
+      }
+    </script>
+<script type="text/javascript">
+  $(function(){
+  $('.zoom').mousemove(function(ev){
+    
+    let parentWidth = $(this).width();
+    let parentHeight = $(this).height();
+    let mouseX = ev.pageX - $(this).offset().left;
+    let mouseY = ev.pageY - $(this).offset().top;
+    let x = (parentWidth/2 - mouseX)/15;
+    let y = -(parentHeight/2 - mouseY)/15;
+    
+    $(this).css({
+      'transform': 'rotateX('+y+'deg) rotateY('+2*x+'deg) translateZ(50px)',
+      'transition': 'all .15s ease'
+    });
+    
+    $(this).find('.card__img').css({
+      'transform': 'scale(1.05) translateX('+ -5*x +'px) translateY('+ -5*y +'px)',
+      'transition': 'all .15s ease'
+    });
+  });
+  
+  $('.zoom').mouseleave(function(ev) {
+    $(this).css({
+      'transform': 'rotateX(0) rotateY(0)',
+      'transition': 'all .6s ease'
+    });
+    
+    $(this).find('.card__img').css({
+      'transform': 'scale(1) translateX(0px) translateY(0px) translateZ(0)',
+      'transition': 'all .6s ease'
+    });
+  });
+})
+</script>
+<script language="javascript">
+
+  document.getElementById("btn1").onclick = function () {
+    document.getElementById("hidd").style.display = 'block';
+    document.getElementById("btn1").style.display = 'none';
+  };
+  document.getElementById("btn2").onclick = function () {
+    document.getElementById("hidd").style.display = 'none';
+  };
+
+</script>
+</body>
+
+</html>

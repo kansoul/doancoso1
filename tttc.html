@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Thanh toán thành công</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+	<style type="text/css">
+		body{
+			font-family: Roboto,Helvetica Neue,Helvetica,Arial,Sans-serif;
+            font-size: 14px;
+            line-height: 1.42857143;
+            color: #333;
+            background: #efefef;
+          
+		}
+		.head{
+             color: black;
+             background: #e8eaee;
+             font-size: 13px;
+        }
+        .head a{
+        	padding: 15px;
+        
+        }
+        .top a{
+        	text-decoration: none;
+        	color: #7f7f7e;
+
+        }
+        @media screen and (max-width: 1000px) {
+       .top a {display: none;}
+       .dn {display: none;}
+       #menu{display: none;}
+       .ico{display: none;}
+        }
+        .dn{
+        	padding-top: 35px; padding-left: 70px;
+        }
+        .dn a{
+          text-decoration: none;
+          color: gray;
+        }
+        .ico{
+          padding-top: 25px;
+
+        }
+        .ico img{
+          width: 40%;
+        }
+
+        .list{
+        	z-index: 99;
+        	padding: 0px;
+        	margin: 0px;
+
+        }
+        .head1{
+          background: white;
+        }
+        .head2{
+          background: white;
+          margin-top: 20px;
+          text-align: left;
+          padding-top: 30px;
+        }
+        .mg{
+          margin-left: 20px;
+        }
+        .mg h1{
+          color: red;
+        }
+        .mg h5{
+          font-size: 16px;
+          color: gray;
+        }
+        .cen{
+        	background: black;
+        }
+        #menu ul {
+            background: white;
+            width: 100%;
+            padding: 0;
+            list-style-type: none;
+            text-align: left;
+        }
+        #menu li {
+            width: auto;
+            height: 40px;
+            line-height: 40px;
+            border-bottom: 1px solid #e8e8e8;
+            padding: 0 1em;
+        }
+        #menu li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            display: block;
+        }
+        #menu li:hover {
+            background: #CDE2CD;
+        }
+
+/*==Dropdown Menu==*/
+        #menu ul li {
+            position: relative;
+        }
+        #menu .sub-menu {
+            position: absolute;
+            left: 100%;
+            top: 0;
+            display: none;
+        }
+        #menu li:hover .sub-menu {
+            display: block;
+        }
+       
+        .xh2{
+          background: white;
+          margin-top: 10px;
+          font-size: 25px;
+
+          }
+          .xh2 a{
+            text-decoration: none;
+            font-size: 14px;
+          }
+          .tb{
+            background: white;
+            padding-top: 20px;
+            padding-left: 40px;
+          }
+          .fy{
+            padding:0;
+            background: white;
+          margin-top: 10px;
+          font-size: 25px;
+          }
+         .fy ul{
+            list-style-type: none;
+            padding: 0px;
+          }
+          .fy li{
+            display: inline-block;
+            padding: 10px 1px;
+          }
+          .card-body{
+             padding: 0;  
+          }
+          .card{
+            padding: 5px;
+          }
+          h1.bl{
+          font: 700 23px Tahoma;
+         color: #12404b;
+         padding-bottom: 20px;
+         }
+         .b1{
+          background: white;
+          margin-top: 10px;
+          font-size: 25px;
+         }
+           .tt a{
+  font-size: 10px;
+  color: gray;
+  text-decoration: none;
+}
+.tt{
+  font-size: 10px;
+  color: gray;
+  padding-top: 10px;
+  padding-bottom: 20PX;
+}
+.spp p{
+              color: red;
+          }
+          .spp img{
+            width: 150px;
+            height: 150px;
+          }
+          .spp h5{
+            font-size: 15px;
+            text-align: left;
+          }
+
+	</style>
+</head>
+<body>
+	<div class="container col-md-12 head">
+		<div class="row">
+			<div class="col-md-4" style="text-align: center;">
+				Khu vực của bạn:
+		
+			    <select>
+			        <option value="">Chọn</option>
+			        <option value="1">Đà Nẵng</option>
+                    <option value="2">Hà Nội</option>
+                    <option value="3">Hồ Chí Minh</option>
+			    </select>
+			</div>
+			<div class="col-md-1"></div>
+			<div class="col-md-7 top">
+				<a href="">Nhanh hơn với ứng dụng</a>
+				<a href="">Chăm sóc khách hàng</a>
+				<a href="">Kiểm Tra Đơn Hàng</a>
+				<a href="">Đối tác cùng TG Online</a>
+				<a href="">Hỗ Trợ</a>
+			</div>
+		</div>
+			         
+		
+	</div>
+	<div class="container col-md-12 head1">
+		<div class="row">
+			<div class="col-md-4" align="center">
+				<img src="img/slide/logo.png">
+			</div>
+			<div class="col-md-4" style="padding-top: 25px;">
+				<div class="input-group mb-3">
+                  <input type="text" class="form-control" placeholder="Tìm kiếm sản phẩm, thương hiệu,........" aria-label="Recipient's username" aria-describedby="button-addon2" style="font-size: 14px;">
+                  <div class="input-group-append">
+                      <button class="btn btn-outline-secondary" type="button" id="button-addon2" style="background: red; color: white;">Tìm Kiếm</button>
+                  </div>
+                </div>
+			</div>
+       <div class="col-md-1 ico" >
+        <a href="muahang.html"><img src="img/1.png"></a>
+      </div>
+			<div class="col-md-3 dn">
+				<a href="">Hồ Văn Đoan</a> , <a href="">Thoát</a>
+			</div>
+		</div>
+	</div>
+</br>
+
+<div class=" container col-md-10 tt">
+   <a href="">TRANG CHỦ</a>&nbsp>&nbsp<a href="">THANH TOÁN</a>
+</div>
+
+<div class="container col-md-10" align="center" style="background: white; padding-bottom: 20px;" >
+  <img src="img/check/1.gif" style="width: 200px; height: 200px;">
+  <p>Thanh toán thành công</p>
+   <a href="index.html" class="btn btn-danger">Quay lại</a>
+</div>
+
+<div class="container col-md-10 xh2">
+  <div class="col-md-12 " style="padding-top: 30px;">
+          
+                <img src="img/ico.png"> Sản phẩm tương tự
+              
+     </div></br>
+    <div class="col-md-12 fy spp"  align="center">
+         <ul>
+           <li>
+             <a href="">
+               <div class="card hovicon effect-5 sub-a color-orange" style="width: 9rem;">
+                 <img class="card-img-top" src="img/sp/1.jpg" alt="Card image cap">
+                     <div class="card-body">
+                        <h5 class="card-title">Chảo chống dính đáy từ Elmich EDA-42126 26cm</h5>
+                         <p class="card-text">299.000đ </p>
+                        <a href="ttsanpham.html" class="btn btn-danger">Mua ngay</a>
+                      </div>
+               </div>
+             </a>
+           </li>
+           <li>
+             <a href="">
+               <div class="card hovicon effect-5 sub-a color-orange" style="width: 9rem;">
+                 <img class="card-img-top" src="img/sp/2.jpg" alt="Card image cap">
+                     <div class="card-body">
+                        <h5 class="card-title">Nồi luộc gà chống dính đáy từ Elmich ELIV-6302428BR</h5>
+                         <p class="card-text">299.000đ </p>
+                        <a href="ttsanpham.html" class="btn btn-danger">Mua ngay</a>
+                      </div>
+               </div>
+             </a>
+           </li>
+           <li>
+             <a href="">
+               <div class="card hovicon effect-5 sub-a color-orange" style="width: 9rem;">
+                 <img class="card-img-top" src="img/sp/3.jpg" alt="Card image cap">
+                     <div class="card-body">
+                        <h5 class="card-title">Máy làm sữa hạt đa năng Ranbem 769s </br></h5>
+                         <p class="card-text">1.359.000đ</p>
+                        <a href="ttsanpham.html" class="btn btn-danger">Mua ngay</a>
+                      </div>
+               </div>
+             </a>
+           </li>
+           <li>
+             <a href="">
+               <div class="card hovicon effect-5 sub-a color-orange" style="width: 9rem;">
+                 <img class="card-img-top" src="img/sp/4.jpg" alt="Card image cap">
+                     <div class="card-body">
+                        <h5 class="card-title">30 gói nước uống hồng sâm 6 năm tuổi Hàn Quốc...</h5>
+                         <p class="card-text">375.000đ</p>
+                        <a href="ttsanpham.html" class="btn btn-danger">Mua ngay</a>
+                      </div>
+               </div>
+             </a>
+           </li>
+           <li>
+             <a href="">
+               <div class="card hovicon effect-5 sub-a color-orange" style="width: 9rem;">
+                 <img class="card-img-top" src="img/sp/5.jpg" alt="Card image cap">
+                     <div class="card-body">
+                        <h5 class="card-title">Tã-bỉm quần Huggies Dry L68 - Túi 68 miếng</h5>
+                         <p class="card-text">300.000đ</p>
+                        <a href="ttsanpham.html" class="btn btn-danger">Mua ngay</a>
+                      </div>
+               </div>
+             </a>
+           </li>
+           <li>
+             <a href="">
+               <div class="card hovicon effect-5 sub-a color-orange" style="width: 9rem;">
+                 <img class="card-img-top" src="img/sp/6.jpg" alt="Card image cap">
+                     <div class="card-body">
+                        <h5 class="card-title">(ADR Trợ Giá) Buffet Lẩu "Trên Đĩa Bay Khổng Lồ"</h5>
+                         <p class="card-text">175.000đ </p>
+                        <a href="ttsanpham.html" class="btn btn-danger">Mua ngay</a>
+                      </div>
+               </div>
+             </a>
+           </li>
+           <li>
+             <a href="">
+               <div class="card hovicon effect-5 sub-a color-orange" style="width: 9rem;">
+                 <img class="card-img-top" src="img/sp/7.jpg" alt="Card image cap">
+                     <div class="card-body">
+                        <h5 class="card-title">Vở học sinh 48 trang 5 ly &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</h5>
+                         <p class="card-text">8.000đ</p>
+                        <a href="ttsanpham.html" class="btn btn-danger">Mua ngay</a>
+                      </div>
+               </div>
+             </a>
+           </li>
+           <li>
+             <a href="">
+               <div class="card hovicon effect-5 sub-a color-orange" style="width: 9rem;">
+                 <img class="card-img-top" src="img/sp/8.jpg" alt="Card image cap">
+                     <div class="card-body">
+                        <h5 class="card-title">Bộ dụng cụ đa năng Bosch 12 món</h5>
+                         <p class="card-text">489.000đ</p>
+                        <a href="ttsanpham.html" class="btn btn-danger">Mua ngay</a>
+                      </div>
+               </div>
+             </a>
+           </li>
+         </ul>
+       </div>
+       </br>
+ </div>  
+ <div class="container col-md-12" style="background: white; padding-top: 20px; margin-top: 10px;">
+     <div class="row">
+
+        <div class="col-md-4" style="text-align: center;">
+          <img src="img/slide/logo.png">
+        </div>
+        <div class="col-md-8">
+            <div style="font-size: 13px; padding-left: 20px;">
+              Mã số doanh nghiệp: 0104918404 do Sở Kế hoạch và Đầu tư TP. Hà Nội cấp lần đầu ngày 20/09/2010.
+            </br>
+            Trụ sở chính: KTX Cao đẳng CNTT, phường Hòa Quý, Quận Ngũ Hành Sơn, TP Đà Nẵng.
+            </br>
+            © 2018 Bản quyền thuộc về Công Ty Cổ Phần Dịch Vụ Thương Mại Tổng Hợp VanDoan
+            </div>
+        </div>
+     </div>
+</div>
+      
+ 
+   
+
+
+     
+
+<!-- Load jquery trước khi load bootstrap js -->
+<script src="jquery-3.3.1.min.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
